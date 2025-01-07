@@ -4,17 +4,10 @@
 # Addon Provider: zim514
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-01-07 00:17+0000\n"
-"Last-Translator: Heiko Berner <berner.h@gmail.com>\n"
-"Language-Team: Afrikaans (South Africa) <https://kodi.weblate.cloud/projects/kodi-add-ons-scripts/script-service-hue/af_za/>\n"
-"Language: af_za\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9.2\n"
 
 msgctxt "Addon Summary"
 msgid "Automate Hue lights with Kodi playback"
@@ -99,7 +92,7 @@ msgstr ""
 
 msgctxt "#30510"
 msgid "General"
-msgstr "Algemeen"
+msgstr ""
 
 msgctxt "#30511"
 msgid "Schedule"
@@ -145,7 +138,7 @@ msgstr ""
 
 msgctxt "#32101"
 msgid "Advanced"
-msgstr "Gevorderd"
+msgstr ""
 
 msgctxt "#32106"
 msgid "Video Activation Rules"
@@ -233,7 +226,7 @@ msgstr ""
 
 msgctxt "#30043"
 msgid "Error"
-msgstr "Fout"
+msgstr ""
 
 msgctxt "#30047"
 msgid "Connection lost. Check settings. Shutting down"
@@ -339,7 +332,7 @@ msgstr ""
 
 msgctxt "#30060"
 msgid "Play"
-msgstr "Speel"
+msgstr ""
 
 #. Must end with a space, status string is appended
 msgctxt "#30061"
@@ -348,7 +341,7 @@ msgstr ""
 
 msgctxt "#30062"
 msgid "Settings"
-msgstr "Verstellings"
+msgstr ""
 
 msgctxt "#30063"
 msgid "Disabled by daytime"
@@ -514,7 +507,3 @@ msgstr ""
 msgctxt "#30028"
 msgid "Configure Hue Home location to use Sunset time, defaulting to 19:00"
 msgstr ""
-
-#~ msgctxt "#30002"
-#~ msgid "ERROR: Scene not created"
-#~ msgstr "ERROR: Scene not created"
