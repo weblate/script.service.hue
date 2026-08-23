@@ -515,6 +515,14 @@ msgctxt "#30028"
 msgid "Configure Hue Home location to use Sunset time, defaulting to 19:00"
 msgstr ""
 
+msgctxt "#30030"
+msgid "Bridge refused light command, stopping ambilight"
+msgstr ""
+
+msgctxt "#30031"
+msgid "Bridge refused scene command"
+msgstr ""
+
 #~ msgctxt "Addon Description"
 #~ msgid "Automate your Hue lights with Kodi. Create multi-room scenes that run when you Play, Pause or Stop media playback. Create and delete multi-room scenes from add-on settings then select which to apply for different Playback events. Can use Hue's sunrise and sunset times to automatically disable the service during daytime and turn on the lights at sunset during playback. Includes Ambilight support."
 #~ msgstr "Automatitza les teves llums Hue amb Kodi. Creeu escenes en diverses habitacions que s'executen al reproduir, posar en pausa o aturar la reproducció multimèdia. Crea i suprimeix escenes de diverses habitacions des de la configuració del complement i, a continuació, selecciona quina vols aplicar als diferents esdeveniments de reproducció. Pots utilitzar les hores de sortida i posta del sol de Hue per desactivar automàticament el servei durant el dia i encendre els llums al capvespre durant la reproducció. Inclou suport d'Ambilight."

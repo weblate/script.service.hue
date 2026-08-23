@@ -515,6 +515,14 @@ msgctxt "#30028"
 msgid "Configure Hue Home location to use Sunset time, defaulting to 19:00"
 msgstr "Configura la posizione di Hue Home per usare l'ora del tramonto, che per impostazione predefinita è alle 19:00"
 
+msgctxt "#30030"
+msgid "Bridge refused light command, stopping ambilight"
+msgstr ""
+
+msgctxt "#30031"
+msgid "Bridge refused scene command"
+msgstr ""
+
 #~ msgctxt "#30028"
 #~ msgid "configure hue home location to use sunset time, defaulting to 19:00"
 #~ msgstr "configura la posizione home di Hue per usare l'ora del tramonto, che è predefinita alle 19:00"
