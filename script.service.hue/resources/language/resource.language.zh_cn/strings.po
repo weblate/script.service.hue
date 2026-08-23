@@ -515,6 +515,14 @@ msgctxt "#30028"
 msgid "Configure Hue Home location to use Sunset time, defaulting to 19:00"
 msgstr "将 Hue Home 位置配置为使用日落时间，默认为 19：00"
 
+msgctxt "#30030"
+msgid "Bridge refused light command, stopping ambilight"
+msgstr ""
+
+msgctxt "#30031"
+msgid "Bridge refused scene command"
+msgstr ""
+
 #~ msgctxt "#30042"
 #~ msgid "Fade Time (Seconds)"
 #~ msgstr "淡入淡出时间（秒）"

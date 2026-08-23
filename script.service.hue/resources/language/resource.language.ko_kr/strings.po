@@ -515,6 +515,14 @@ msgctxt "#30028"
 msgid "Configure Hue Home location to use Sunset time, defaulting to 19:00"
 msgstr "일몰 시간을 사용하도록 Hue 홈 위치를 설정합니다. 기본값은 19:00입니다"
 
+msgctxt "#30030"
+msgid "Bridge refused light command, stopping ambilight"
+msgstr ""
+
+msgctxt "#30031"
+msgid "Bridge refused scene command"
+msgstr ""
+
 #~ msgctxt "#30028"
 #~ msgid "configure hue home location to use sunset time, defaulting to 19:00"
 #~ msgstr "일몰 시간을 사용하도록 색조 기본 위치를 설정합니다. 기본값은 19:00입니다"
