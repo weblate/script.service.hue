@@ -144,4 +144,6 @@ _strings['bridge unauthorized, please reconfigure.'] = 30025
 _strings['connection failed, retrying...'] = 30026
 _strings['not selected'] = 30003
 _strings['error: light not found, it may have been deleted'] = 30027
-_strings['configure hue home location to use sunset time, defaulting to 19:00'] = None
+_strings['configure hue home location to use sunset time, defaulting to 19:00'] = 30028
+_strings['bridge refused light command, stopping ambilight'] = 30030
+_strings['bridge refused scene command'] = 30031

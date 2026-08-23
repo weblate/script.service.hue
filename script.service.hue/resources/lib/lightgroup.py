@@ -168,6 +168,9 @@ class LightGroup(xbmc.Player):
                     ADDON.setSettingString(f"group{self.light_group_id}_{action}SceneID", "-1")
                     log(f"[SCRIPT.SERVICE.HUE] Scene {scene} not found - group{self.light_group_id}_{action}Behavior ")
                     notification(header=_("Hue Service"), message=_("ERROR: Scene not found, it may have been deleted"), icon=xbmcgui.NOTIFICATION_ERROR)
+                elif exc.status_code == 403:  # bridge refused the recall while the key stays valid, keep the scene configured and just report it
+                    log(f"[SCRIPT.SERVICE.HUE] Scene {scene} refused by bridge")
+                    notification(header=_("Hue Service"), message=_("Bridge refused scene command"), icon=xbmcgui.NOTIFICATION_ERROR)
                 else:
                     reporting.process_exception(exc)
             except Exception as exc:

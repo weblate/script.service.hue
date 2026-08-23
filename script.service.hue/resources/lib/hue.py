@@ -61,11 +61,17 @@ class Hue(object):
                 if status == 429:
                     log(f"[SCRIPT.SERVICE.HUE] make_request: Too Many Requests: {x}\nResponse: {text}")
                     raise HueApiError(429, text)
-                elif status in [401, 403]:
+                elif status == 401:
+                    # The bridge doesn't recognise the application key: clear it so the user is prompted to pair again.
                     log(f"[SCRIPT.SERVICE.HUE] make_request: Unauthorized: {x}\nResponse: {text}")
                     notification(_("Hue Service"), _("Bridge unauthorized, please reconfigure."), icon=xbmcgui.NOTIFICATION_ERROR)
                     ADDON.setSettingString("bridgeUser", "")
                     raise HueApiError(401, text)
+                elif status == 403:
+                    # The application key is valid but the bridge refused this particular request, so the pairing is kept.
+                    # The bridge answers with an HTML page rather than a JSON error here, so there is nothing useful to parse out of the body.
+                    log(f"[SCRIPT.SERVICE.HUE] make_request: Forbidden: {x}\nResponse: {text}")
+                    raise HueApiError(403, text)
                 elif status == 404:
                     log(f"[SCRIPT.SERVICE.HUE] make_request: Not Found: {x}\nResponse: {text}")
                     raise HueApiError(404, text)

@@ -1,4 +1,4 @@
-<addon id="script.service.hue" name="Hue Service" provider-name="zim514" version="2.3.5">
+<addon id="script.service.hue" name="Hue Service" provider-name="zim514" version="2.3.6">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.31.0"/>
@@ -20,7 +20,12 @@
         </assets>
         <source>https://github.com/zim514/script.service.hue</source>
         <forum>https://forum.kodi.tv/showthread.php?tid=344886</forum>
-        <news>v2.3.5
+        <news>v2.3.6
+- Keep the bridge pairing when the bridge refuses a command (HTTP 403) instead of asking to reconfigure
+- Stop ambilight with a clear message when the bridge refuses a light command
+- Fix newly added text not being translatable
+
+v2.3.5
 - Update translations
 
 v2.3.4

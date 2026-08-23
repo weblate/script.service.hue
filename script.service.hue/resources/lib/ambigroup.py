@@ -208,6 +208,12 @@ class AmbiGroup(lightgroup.LightGroup):
                     log(f"[SCRIPT.SERVICE.HUE] AmbiGroup[{self.light_group_id}] Not Found")
                     notification(header=_("Hue Service"), message=_("ERROR: Light not found, it may have been deleted"), icon=xbmcgui.NOTIFICATION_ERROR)
                     AMBI_RUNNING.clear()  # shut it down
+                elif exc.status_code == 403:
+                    # The bridge refused the update even though the key is valid, typically because another app holds these lights in an entertainment stream.
+                    log(f"[SCRIPT.SERVICE.HUE] AmbiGroup[{self.light_group_id}] Forbidden: bridge refused light update")
+                    if AMBI_RUNNING.is_set():  # only the first worker to notice reports it, the rest are updating other lights in parallel
+                        notification(header=_("Hue Service"), message=_("Bridge refused light command, stopping ambilight"), icon=xbmcgui.NOTIFICATION_ERROR)
+                    AMBI_RUNNING.clear()  # shut it down
                 else:
                     AMBI_RUNNING.clear()  # shut it down
                     reporting.process_exception(exc)

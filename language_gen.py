@@ -95,6 +95,8 @@ with open(code_file, "w", newline="\n") as f:
     for m in po:
         if m.msgctxt.startswith("#"):
             # If the string is already mapped, use existing mapping else create new.
-            string_id = mapped.get(m.msgid.lower(), m.msgctxt.replace("#", "").strip())
+            # A string that is in the source but not yet in language.py is present in the mapping with a value of None,
+            # so fall back on the ID reserved in the .po file rather than on the default of dict.get().
+            string_id = mapped.get(m.msgid.lower()) or m.msgctxt.replace("#", "").strip()
             line = '_strings[\'%s\'] = %s\n' % (m.msgid.lower().replace("'", "\\'"), string_id)
             f.write(line)
